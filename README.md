@@ -2,6 +2,11 @@
 
 Simple server 
 
+## Preview 
+Preview using Firefox profiles to use equals execute ```firefox -p``` on command line. 
+
+![Maggie - Dashboard - Preview](https://raw.githubusercontent.com/emaggie/dashboard/master/preview.jpg)
+
 ## Install
 
 Run this command from the directory in which you want to install your new dashboard
