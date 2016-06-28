@@ -1,0 +1,36 @@
+{
+    "name": "slim/slim-skeleton",
+    "description": "A Slim Framework skeleton application for rapid development",
+    "keywords": ["microframework","rest","router", "psr7"],
+    "homepage": "http://github.com/slimphp/Slim-Skeleton",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Josh Lockhart",
+            "email": "info@joshlockhart.com",
+            "homepage": "http://www.joshlockhart.com/"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "slim/slim": "^3.1",
+        "slim/php-view": "^2.0",
+        "monolog/monolog": "^1.17",
+        "symfony/var-dumper": "^3.1",
+        "symfony/dom-crawler": "^3.1",
+        "symfony/css-selector": "^3.1",
+        "fightbulc/moment": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Maggie\\Dashboard\\": "src"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php -r \"if(!file_exists('config.php')) copy('config.example.php', 'config.php');\"",
+            "php -r \"mkdir('storage/cache', 0777, TRUE);\"",
+            "php -r \"mkdir('storage/logs', 0777, TRUE);\""
+        ]
+    }
+}
